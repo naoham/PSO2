@@ -67,22 +67,19 @@ namespace VREnergyManagerMinimum
                     ClientSize.Width - margin * 2,
                     ClientSize.Height - margin * 2);
 
-                // 横線（下）と 0% の縦線
                 e.Graphics.DrawLine(_pen_Base, rect.Left, rect.Bottom, rect.Right, rect.Bottom);
                 e.Graphics.DrawLine(_pen_Base, rect.Left, rect.Top, rect.Left, rect.Bottom);
 
-                // 50%〜95% を 2.5%刻みで描画
                 for (float percent = 50f; percent < 95f; percent += 2.5f)
                 {
                     float x = rect.Left + rect.Width * percent / 100f;
-                    if (percent > 69f) // 70%以上だけ表示
+                    if (percent > 69f)
                     {
                         Pen pen = _specialLines.ContainsKey(percent) ? _specialLines[percent] : _pen_Base;
                         e.Graphics.DrawLine(pen, x, rect.Top, x, rect.Bottom);
                     }
                 }
 
-                // 95%〜100% を 5%刻みで描画
                 for (float percent = 95f; percent <= 100f; percent += 5f)
                 {
                     float x = rect.Left + rect.Width * percent / 100f;
