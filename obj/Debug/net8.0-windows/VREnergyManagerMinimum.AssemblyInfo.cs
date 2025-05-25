@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VREnergyManagerMinimum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02658e7da0ad14fd18188e6e9368daf43fb1070f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bda33c715603dac8a3bd1ff50a8e11be9d71c15")]
 [assembly: System.Reflection.AssemblyProductAttribute("VREnergyManagerMinimum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VREnergyManagerMinimum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

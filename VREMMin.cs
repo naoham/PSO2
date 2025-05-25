@@ -22,10 +22,14 @@ namespace VREnergyManagerMinimum
         public VREMMin()
         {
             InitializeComponent();
-            Text = "VRエネルギー管理ミニマム";
+            Text = "VRエネルギー管理";
             TopMost = true;
             TransparencyKey = BackColor;
             DoubleBuffered = true;
+
+            // 最大化・最小化ボタンを非表示
+            MaximizeBox = false;
+            MinimizeBox = false;
 
             string iniPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.ini");
             _ini = new IniFile(iniPath);
